@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+        <title>Sum Arguments</title>
+    </head>
+    
+    <body>
+        <h1>Sum of Arguments</h1>
+        <input type="number" id="arg1" placeholder="Enter a number">
+        <input type="number" id="arg2" placeholder="Enter a number">
+        <input type="number" id="arg3" placeholder="Enter a number">
+        <button onclick="sumArguments()">Sum</button>
+        <p id="result"></p>
+    
+        <script>
+            function sumArguments() {
+                const arg1 = parseInt(document.getElementById('arg1').value, 10) || 0;
+                const arg2 = parseInt(document.getElementById('arg2').value, 10) || 0;
+                const arg3 = parseInt(document.getElementById('arg3').value, 10) || 0;
+                const sum = arg1 + arg2 + arg3;
+                document.getElementById('result').innerText = `The sum of arguments is: ${sum}`;
+            }
+        </script>
+    </body>
+    
+    </html>
+
+</body>
+</html>
